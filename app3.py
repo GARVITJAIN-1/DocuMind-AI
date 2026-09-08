@@ -25,7 +25,7 @@ st.write("Upload Pdf's and chat with their content")
 api_key=st.text_input("Enter your Groq API key", type="password")
 
 if api_key:
-    llm=ChatGroq(groq_api_key=api_key, model_name='llama-3.3-70b-versatile')
+    llm=ChatGroq(groq_api_key=api_key, model_name='qwen/qwen3.8-27b')
 
     session_id=st.text_input("Session ID",value="default_session")
     if 'store' not in st.session_state:
